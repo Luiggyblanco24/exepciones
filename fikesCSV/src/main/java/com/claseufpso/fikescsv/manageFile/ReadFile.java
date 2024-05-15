@@ -20,23 +20,22 @@ public class ReadFile {
         this.bufferedReader = new BufferedReader(fileReader);
     }
 
-    public List<String> loadData() {
+    public List<String> loadData() throws IOException {
         String line;
         List<String> data = new ArrayList<>();
         try {
             while ((line = bufferedReader.readLine()) != null) {
                 data.add(line);
             }
-        } catch (IOException e) {
-
         } finally {
             try {
                 if (fileReader != null) {
                     fileReader.close();
                 }
-            } catch(IOException e2){ 
+            } catch (IOException e2) {
             }
         }
         return data;
 
-    }}
+    }
+}
