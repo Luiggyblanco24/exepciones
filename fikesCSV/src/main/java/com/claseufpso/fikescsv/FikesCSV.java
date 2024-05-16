@@ -18,9 +18,9 @@ public class FikesCSV {
             splited = line.split(";");
             System.out.println("Hola " + splited[0] + " " + splited[1] + " con codigo: " + splited[2] + " y numero de celular:  " + splited[3]);
         }
-
-        String nuevoNombre = "luiggy";
-        String nuevoApellido = "sebastian";
+        //escribir sobre linea
+        String nuevoNombre = "daniel";
+        String nuevoApellido = "ramirez";      
         String nuevoCodigo = "12345";
         String nuevoCelular = "3214848106";
         String nuevaLinea = nuevoNombre + ";" + nuevoApellido + ";" + nuevoCodigo + ";" + nuevoCelular;
