@@ -1,0 +1,6 @@
+los platos disponibles son
+[ arroz ,  carne ,  jugo , tajadas ]
+[ pastas ,  pollo ,  jugo , yuca ]
+[ arroz ,  lomo , jugo , maduro]
+Total del pedido realizado: 0
+platos pedidos: []
