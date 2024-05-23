@@ -1,14 +1,37 @@
 package com.mycompany.excepciones;
 
-import java.util.Random;
-
 public class numeroRandom {
 
-      Random random = new Random();
-        
-        for (int i = 0; i < 10; i++) {
-            int numero = random.nextInt(Integer.MAX_VALUE); // Generar un número aleatorio entre 0 y el máximo valor de un entero
-            System.out.println("Número aleatorio " + (i+1) + ": " + numero);
+ public static double divide(double numerador, double denominator) throws ArithmeticException {
+        if (denominator == 0) {
+            throw new ArithmeticException("No se puede dividir por cero.");
         }
+        return numerador / denominator;
+    }
+    
+    public static double square(double number) {
+        return number * number;
+    }
+    
+    public static void main(String[] args) {
+        try {
+            double result1 = divide(4, 2);
+            System.out.println("Resultado de la división: " + result1);
+            
+            double result2 = divide(4, 2); // Esto generará una excepción
+            System.out.println("Resultado de la división: " + result2); // Esta línea no se ejecutará
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " );
+        } finally {
+            System.out.println("Operación completa.");
+        }
+        
+        double result3 = square(5);
+        System.out.println("Resultado del cuadrado: " + result3);
     }
 }
+
+
+
+
+
